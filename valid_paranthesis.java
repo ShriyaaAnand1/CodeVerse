@@ -1,4 +1,4 @@
-public class valid_paranthesis {
+public class Solution {
     public static boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
         for (char ch : s.toCharArray()) {
@@ -17,10 +17,4 @@ public class valid_paranthesis {
         }
         return stack.isEmpty();
     }
-    public static void main(String[] args) {
-        System.out.println(isValid("()"));      
-        System.out.println(isValid("()[]{}"));   
-        System.out.println(isValid("(]"));      
-        System.out.println(isValid("([])"));     
-}
 }
